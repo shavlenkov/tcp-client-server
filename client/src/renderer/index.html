@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TCP Client</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>TCP Client</h1>
+
+    <form id="connectForm">
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+            <label style="flex: 1;">IP Address: <input type="text" id="ip" placeholder="127.0.0.1"></label>
+            <label style="flex: 1;">Port: <input type="number" id="port" placeholder="3000"></label>
+            <button type="button" id="connectBtn">Connect</button>
+        </div>
+    </form>
+
+    <div id="controls">
+        <div class="control-row">
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter your name" >
+        </div>
+        <div class="control-row">
+            <label for="mobilePhone">Mobile Number:</label>
+            <input type="number" id="mobilePhone" placeholder="Enter phone number">
+        </div>
+        <div class="control-row">
+            <label for="yearOfBirth">Year of Birth:</label>
+            <input type="number" id="yearOfBirth" placeholder="Enter year of birth">
+        </div>
+        <div class="control-row">
+            <label for="knowledgeArea">Area of Knowledge:</label>
+            <select id="knowledgeArea">
+                <option value=""></option>
+                <option value="Frontend">Frontend</option>
+                <option value="Backend">Backend</option>
+                <option value="DevOps">DevOps</option>
+                <option value="Security">Security</option>
+            </select>
+        </div>
+        <div class="control-row">
+            <label for="comment">Comment:</label>
+            <textarea style="resize: none;" rows="7" id="comment" maxlength="255" placeholder="Enter comment"></textarea>
+        </div>
+        <button id="sendBtn">Send Information Packet</button>
+    </div>
+
+</div>
+
+<script src="../../dist/renderer/renderer.js"></script>
+
+</body>
+</html>
